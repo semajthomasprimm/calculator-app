@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Frontend Mentor - Calculator app solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Desktop](desktop-default.png)
 
-## Available Scripts
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+To build a calculator with features including:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A three-way theme toggle button
+- Perform arithmetic operations: addition, subtraction, multiplication, and division.
+- Responsive design for mobile, tablet, and desktop screens
 
-### `npm run build`
+## Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Default Theme
+#### Desktop
+![Desktop Default](desktop-default.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Mobile
+![Mobile](mobile-default.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Day Theme
+#### Desktop
+![Desktop Day](desktop-day.png)
 
-### `npm run eject`
+#### Mobile
+![Mobile](mobile-day.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Neon Theme
+#### Desktop
+![Desktop Day](desktop-neon.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Mobile
+![Mobile](mobile-neon.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Links
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Solution URL: [github.com/semajthomasprimm/](https://github.com/semajthomasprimm/calculator-app)
+- Live Site URL: [Live Demo](https://calculator-app-sp.netlify.app/)
 
-## Learn More
+## My process
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Built with
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/) - JS library
+- [TailwindCSS](https://tailwindcss.com/) - For styling
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-### Code Splitting
+### What I learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### How to define multiple themes with TailwindCSS
 
-### Analyzing the Bundle Size
+This app has 3 different themes, so I immediately researched a tutorial for help with this. Thanks to the TailwindCSS YouTube channel, I was able learn how to define multiple themes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Using CSS variables, I defined the theme in index.css and utilized the CSS variables in my Tailwind config file.
 
-### Making a Progressive Web App
+Naming the variables was difficult, I had to make sure that the class names I used in the React components weren't theme specific.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Combining the 3-way toggle, I way able to easily fix any lingering style mistakes.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Develop a 3-way toggle using React hooks
 
-### Deployment
+A 3-way toggle requires 3 states to be monitored, as opposed to a regular 2-way toggle. After researching different approaches in vanilla JS and ReactJS, I declared a state variable using useState, which would contain a Boolean array of 3 values.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The index of each Boolean value refers to a specific theme. Default is 0, Day is 1, and Neon is 2.
 
-### `npm run build` fails to minify
+The default theme is true initially. When the toggle is switched, the state variable updates the array and the selected theme is conditionally rendered.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Useful resources
+
+- [TailwindCSS Themeing Tutorial](https://www.youtube.com/watch?v=MAtaT8BZEAo) - This helped me with defining multiple themes using TailwindCSS and CSS variables. I really liked this pattern and will use it going forward.
+- [3 way toggle CodePen example](https://codepen.io/magnus16/pen/grzqMz) - This is a helpful vanilla JS approach to developing a 3-way toggle. I used it help model my ReactJS implementation.
+
+## Author
+
+- Website - [Semaj Primm](https://www.semajprimm.com)
+- Frontend Mentor - [@semajthomasprimm](https://www.frontendmentor.io/profile/semajthomasprimm)

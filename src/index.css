@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root{
+    --color-text-base: #434A59;
+    --color-text-invert: #ffffff;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #434A59;
+    --color-button-primary: #647198;
+    --color-button-primary-hover: #A2B2E1;
+    --color-button-secondary: #EAE3DC;
+    --color-button-secondary-hover: #fffffe;
+    --color-button-accent: #D03F2F;
+    --color-button-accent-hover: #F96B5B;
+    --color-fill: #3A4663;
+    --color-result: #181F33;
+    --color-buttons: #242D44;
+    --color-shadow-primary: rgb(65,78,115);
+    --color-shadow-secondary: rgb(179,164,151);
+    --color-shadow-accent: rgb(147,38,26);
+    --color-accent-button-text: #ffffff;
+
+  }
+
+  .theme-day{
+    --color-text-base: #36362C;
+    --color-text-invert: #ffffff;
+    --color-text-primary: #36362C;
+    --color-text-secondary: #36362C;
+    --color-button-primary: #378187;
+    --color-button-primary-hover: #62B5BC;
+    --color-button-secondary: #E5E4E1;
+    --color-button-secondary-hover: #FFFFFF;
+    --color-button-accent: #C85402;
+    --color-button-accent-hover: #FF8A38;
+    --color-fill: #E6E6E6;
+    --color-result: #EEEEEE;
+    --color-buttons: #D2CDCD;
+    --color-shadow-primary: #1B6066;
+    --color-shadow-secondary: #A79E91;
+    --color-shadow-accent: #873901;
+    --color-accent-button-text: #ffffff;
+  }
+
+  .theme-neon{
+    --color-text-base: #17062A;
+    --color-text-invert: #FFE53D;
+    --color-text-primary: #FFE53D;
+    --color-text-secondary: #FFE53D;
+    --color-button-primary: #56077C;
+    --color-button-primary-hover: #8631AF;
+    --color-button-secondary: #331C4D;
+    --color-button-secondary-hover: #6C34AC;
+    --color-button-accent: #00DED0;
+    --color-button-accent-hover: #93FFF8;
+    --color-fill: #17062A;
+    --color-result: #1E0936;
+    --color-buttons: #1E0936;
+    --color-shadow-primary: #881C9E;
+    --color-shadow-secondary: #BE15F4;
+    --color-shadow-accent: #6CF9F1;
+    --color-accent-button-text: #1A2327;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+.toggle-button input[value="0"]:checked{
+  background: var(--color-button-accent);
+}
+
+.toggle-button input[value="1"]:checked{
+  background: #C85402;
+}
+
+.toggle-button input[value="2"]:checked{
+  background: #00DED0;
 }
