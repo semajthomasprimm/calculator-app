@@ -52,7 +52,7 @@ To build a calculator with features including:
 ### Links
 
 - Solution URL: [github.com/semajthomasprimm/](https://github.com/semajthomasprimm/calculator-app)
-- Live Site URL: [Live Demo](https://calculator-app-sp.netlify.app/)
+- Live Site URL: [Live Demo](https://calculator-app-spr.netlify.app/)
 
 ## My process
 
