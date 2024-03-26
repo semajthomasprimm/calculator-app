@@ -88,7 +88,7 @@ The default theme is true initially. When the toggle is switched, the state vari
 
 ### Useful resources
 
-- [TailwindCSS Themeing Tutorial](https://www.youtube.com/watch?v=MAtaT8BZEAo) - This helped me with defining multiple themes using TailwindCSS and CSS variables. I really liked this pattern and will use it going forward.
+- [TailwindCSS Custom Themes Tutorial](https://www.youtube.com/watch?v=MAtaT8BZEAo) - This helped me with defining multiple themes using TailwindCSS and CSS variables. I really liked this pattern and will use it going forward.
 - [3 way toggle CodePen example](https://codepen.io/magnus16/pen/grzqMz) - This is a helpful vanilla JS approach to developing a 3-way toggle. I used it help model my ReactJS implementation.
 
 ## Author
