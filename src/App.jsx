@@ -32,6 +32,7 @@ const App = () => {
     if(btn === "="){
       const lastChar = calculation.charAt(calculation.length-1);
       if(lastChar !== "+" && lastChar !== "-" && lastChar !== "*" && lastChar !== "/"){
+        // eslint-disable-next-line
         setCalculation(eval(calculation).toLocaleString());
       }
     } else if(btn === "Reset"){
