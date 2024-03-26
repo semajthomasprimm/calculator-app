@@ -76,9 +76,9 @@ body {
 }
 
 .toggle-button input[value="1"]:checked{
-  background: #C85402;
+  background: var(--color-button-accent);
 }
 
 .toggle-button input[value="2"]:checked{
-  background: #00DED0;
+  background: var(--color-button-accent);
 }

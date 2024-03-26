@@ -5,15 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      textColor: {
-        skin: {
-          base: 'var(--color-text-base)',
-          invert: 'var(--color-text-invert)',
-          primary: 'var(--color-text-primary)',
-          secondary: 'var(--color-text-secondary)',
-          accent: 'var(--color-accent-button-text)'
-        }
-      },
       backgroundColor: {
         skin: {
           fill: 'var(--color-fill)',
@@ -27,11 +18,45 @@ module.exports = {
           'button-accent-hover': 'var(--color-button-accent-hover)',
         }
       },
+      borderRadius: {
+        'xs': '5px',
+        DEFAULT: '10px',
+        'lg': '13px'
+      },
       boxShadow: {
         'primary': '0 4px 0 var(--color-shadow-primary)',
         'secondary': '0 4px 0 var(--color-shadow-secondary)',
         'accent': '0 4px 0 var(--color-shadow-accent)',
-      }
+      },
+      fontSize: {
+        'h1': '56px',
+        'h2': '40px',
+        'h3': '32px',
+        'h4': '28px',
+        'h5': '20px',
+        'body': '16px',
+        'subtitle': '12px'
+      },
+      fontWeight: {
+        'bold': 700
+      },
+      letterSpacing: {
+        tightest_2xs: '-0.93px',
+        tightest_xs: '-0.67px',
+        tightest: '-0.53px',
+        tighter: '-0.47px',
+        tight: '-0.33px',
+        widest: '1px'
+      },
+      textColor: {
+        skin: {
+          base: 'var(--color-text-base)',
+          invert: 'var(--color-text-invert)',
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          accent: 'var(--color-accent-button-text)'
+        }
+      },
     },
   },
   plugins: [],
